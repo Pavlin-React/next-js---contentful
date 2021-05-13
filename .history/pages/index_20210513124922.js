@@ -22,7 +22,7 @@ export default function Recipes( { recipes } ) {
   return (
     <div className="recipe-list">
       {recipes.map(recipe => (
-        <RecipeCard key ={ recipe.sys.id } recipe={ recipe } />
+        <RecipeCard key ={ recipe.sys.id }>{ recipe.fields.title }</Recipe>
       ))}
     </div>
   )
