@@ -32,10 +32,7 @@ export async function getStaticProps( { params } ) {
   };
 }
 
-export default function RecipeDetails( { recipe } ) {
-
-  console.log(recipe);
-
+export default function RecipeDetails( { } ) {
   return (
     <div>
       Recipe Details

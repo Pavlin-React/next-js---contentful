@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
   let paths = res.items.map(item => {
     return {
-      params: { slug: item.fields.slug }
+      paths: { slug: item.fields.slug }
     }
   })
   return {
@@ -22,20 +22,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps( { params } ) {
 
-  let { items } = await client.getEntries( {
-    content_type: 'recipe',
-    'fields.slug': params.slug
-  } )
+  let { items } = await 
 
   return {
-    props: { recipe: items[0] }
+    props: {}
   };
 }
 
-export default function RecipeDetails( { recipe } ) {
-
-  console.log(recipe);
-
+export default function RecipeDetails() {
   return (
     <div>
       Recipe Details

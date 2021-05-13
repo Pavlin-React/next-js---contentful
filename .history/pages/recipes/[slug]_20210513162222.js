@@ -34,7 +34,7 @@ export async function getStaticProps( { params } ) {
 
 export default function RecipeDetails( { recipe } ) {
 
-  console.log(recipe);
+  console.log();
 
   return (
     <div>
