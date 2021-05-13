@@ -27,8 +27,7 @@ export default function Recipes( { recipes } ) {
       <style>{`
         .recipe-list {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 20px 60px;
+          
         }
       `}</style>
     </div>

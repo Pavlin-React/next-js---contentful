@@ -25,11 +25,7 @@ export default function Recipes( { recipes } ) {
         <RecipeCard key ={ recipe.sys.id } recipe={ recipe } />
       ))}
       <style>{`
-        .recipe-list {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 20px 60px;
-        }
+        .re
       `}</style>
     </div>
   )
