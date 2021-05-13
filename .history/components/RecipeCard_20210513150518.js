@@ -8,11 +8,11 @@ const RecipeCard = ( { recipe } ) => {
   return (
     <div className="card">
       <div className="featured">
-        <Image
+        {/* <Image
           src={ 'https:' + thumbnail.fields.file.url }
-          width={ 700 }
-          height={ 500 }
-        />
+          width={ thumbnail.fields.file.details.image.width }
+          height={ thumbnail.fields.file.details.image.height }
+        /> */}
       </div>
       <div className="content">
         <div className="info">

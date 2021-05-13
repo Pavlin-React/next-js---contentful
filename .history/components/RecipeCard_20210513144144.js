@@ -1,18 +1,14 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from ''
 
 const RecipeCard = ( { recipe } ) => {
 
-  let { title, cookingTime, thumbnail, slug } = recipe.fields
+  let { title, cookingTime, featuredImage, ingredients, slug } = recipe.fields
 
   return (
     <div className="card">
       <div className="featured">
-        <Image
-          src={ 'https:' + thumbnail.fields.file.url }
-          width={ 700 }
-          height={ 500 }
-        />
+        <Image />
       </div>
       <div className="content">
         <div className="info">
