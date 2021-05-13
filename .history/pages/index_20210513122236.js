@@ -7,17 +7,14 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY
   } )
 
-  let res = await client.getEntries( { content_type: 'recipe' } )
+  
 
   return {
-    props: { 
-      recipes: res.items
-    }
+    props: {}
   };
 }
 
-export default function Recipes( { recipes } ) {
-  console.log(recipes);
+export default function Recipes() {
   return (
     <div className="recipe-list">
       Recipe List

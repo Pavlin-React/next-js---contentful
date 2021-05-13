@@ -10,14 +10,11 @@ export async function getStaticProps(context) {
   let res = await client.getEntries( { content_type: 'recipe' } )
 
   return {
-    props: { 
-      recipes: res.items
-    }
+    props: { recipes: }
   };
 }
 
-export default function Recipes( { recipes } ) {
-  console.log(recipes);
+export default function Recipes() {
   return (
     <div className="recipe-list">
       Recipe List

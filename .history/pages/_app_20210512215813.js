@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   )
   
+  
 }
-
+lorem
 export default MyApp

@@ -11,13 +11,12 @@ export async function getStaticProps(context) {
 
   return {
     props: { 
-      recipes: res.items
+      recipes:  
     }
   };
 }
 
-export default function Recipes( { recipes } ) {
-  console.log(recipes);
+export default function Recipes() {
   return (
     <div className="recipe-list">
       Recipe List
