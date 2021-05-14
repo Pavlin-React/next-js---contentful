@@ -37,7 +37,7 @@ export async function getStaticProps( { params } ) {
 }
 
 export default function RecipeDetails( { recipe } ) {
-  if ( !recipe ) return <Skeleton />
+  if ( !recipe ) return <Skeleton
 
   let { featuredImage, cookingTime, ingredients, method, title, thumbnail } = recipe.fields
 
